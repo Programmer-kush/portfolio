@@ -37,19 +37,19 @@ with col1:
     st.subheader("Movie Recommendation System")
     st.image("Movie Recommendation.png", use_container_width=True)
     st.write("A system that recommends movies based on user preferences.")
-    st.write("[🔗 View Project](https://github.com/Programmer-kush)")
+    st.write("[🔗 View Project](https://github.com/Programmer-kush/Movie-recomdation-system)")
 
 with col2:
     st.subheader("Ai Chatbot")
     st.image("ChatBot.png", use_container_width=True)
     st.write("An interactive Q&A chatbot built using Streamlit and integrated with open-source large language models (LLMs). Designed to provide intelligent, witty, and human-like responses while maintaining conversational context through message history.")
-    st.write("[🔗 View Project](https://github.com/Programmer-kush)")
+    st.write("[🔗 View Project](hhttps://github.com/Programmer-kush/ChatBot)")
 
 with col3:
     st.subheader("AI Resume Screening")
     st.image("Resume Screening.png", use_container_width=True)
     st.write("A personal portfolio website showcasing my projects and skills.")
-    st.write("[🔗 View Project](https://github.com/Programmer-kush)")
+    st.write("[🔗 View Project](https://github.com/Programmer-kush/AI-Resume_Screening)")
 
 col4, col5, col6 = st.columns(3)
 
@@ -57,25 +57,27 @@ with col4:
     st.subheader("IoT-Based Car Parking System")
     st.image("IOT Project.jpg", use_container_width=True)
     st.write("A smart car parking system using IoT and sensors.")
-    st.write("[🔗 View Project](https://github.com/Programmer-kush)")
+    st.write("[🔗 View Project](https://github.com/Programmer-kush/Automated-Car-parking-system)")
 
 with col5:
     st.subheader("Android App - UnitConverter")
     st.image("UnitConverterApp.png", use_container_width=True)
     st.write("An Android app that sends automated birthday wishes.")
-    st.write("[🔗 View Project](https://github.com/Programmer-kush)")
+    st.write("[🔗 View Project](https://github.com/Programmer-kush/UnitConverterApp)")
 
 with col6:
     st.subheader("Fake News Detection using ML")
     st.image("Fake news detect.png", use_container_width=True)
     st.write("A remote-controlled ornithopter designed for flight testing.")
-    st.write("[🔗 View Project](https://github.com/Programmer-kush)")
+    st.write("[🔗 View Project](https://github.com/Programmer-kush/ML-powered-Fake-news-detector)")
 
 # Skills
 st.header("Skills")
-skills = ["Python", "Machine Learning", "Web Development", "IoT", "Android Development"]
+skills = ["Python","Data structure & Algorithm","Machine Learning", "Web Development", "IoT", "Android Development"]
 st.write(", ".join(skills))
 
 # Contact
 st.header("Contact Me")
+st.markdown("[Email Me](mailto:kushbohare@gmail.com)")
+
 st.write("Feel free to reach out via email or LinkedIn!")
