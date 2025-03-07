@@ -36,7 +36,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.subheader("Movie Recommendation System")
     st.image("Movie Recommendation.png", use_container_width=True)
-    st.write("A system that recommends movies based on user preferences.")
+    st.write("A movie recommendation system that suggests movies based on user preferences. The system uses collaborative filtering to recommend movies similar to the user's preferences.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush/Movie-recomdation-system)")
 
 with col2:
@@ -48,7 +48,7 @@ with col2:
 with col3:
     st.subheader("AI Resume Screening")
     st.image("Resume Screening.png", use_container_width=True)
-    st.write("A personal portfolio website showcasing my projects and skills.")
+    st.write("The AI-Powered Resume Screening Tool is designed to assist recruiters by automatically evaluating resumes based on a provided job description and keywords. This tool leverages the Groq API for NLP to analyze resumes and determine candidate suitability.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush/AI-Resume_Screening)")
 
 col4, col5, col6 = st.columns(3)
@@ -56,19 +56,19 @@ col4, col5, col6 = st.columns(3)
 with col4:
     st.subheader("IoT-Based Car Parking System")
     st.image("IOT Project.jpg", use_container_width=True)
-    st.write("A smart car parking system using IoT and sensors.")
+    st.write("A smart car parking system using IoT and sensors and Machine Leaning Model")
     st.write("[🔗 View Project](https://github.com/Programmer-kush/Automated-Car-parking-system)")
 
 with col5:
     st.subheader("Android App - UnitConverter")
     st.image("UnitConverterApp.png", use_container_width=True)
-    st.write("An Android app that sends automated birthday wishes.")
+    st.write("A simple unit converter app for Android made bu using Jetpack compose.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush/UnitConverterApp)")
 
 with col6:
     st.subheader("Fake News Detection using ML")
     st.image("Fake news detect.png", use_container_width=True)
-    st.write("A remote-controlled ornithopter designed for flight testing.")
+    st.write("A machine learning model that detects fake news.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush/ML-powered-Fake-news-detector)")
 
 # Skills
