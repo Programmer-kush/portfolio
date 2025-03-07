@@ -6,13 +6,34 @@ st.set_page_config(page_title="My Portfolio", page_icon="🎭", layout="wide")
 
 # Sidebar
 with st.sidebar:
-    st.image("selfimage.jpg", width=200)
+    # Add custom CSS for rounded image
+    st.markdown(
+        """
+        <style>
+            .sidebar-image {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-radius: 50%; /* Makes image circular */
+                width: 150px; /* Adjust size as needed */
+                height: 150px; /* Ensures it's a perfect circle */
+                object-fit: cover; /* Prevents distortion */
+            }
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+    # Apply the class to the image
+    st.image("selfimage.jpg", width=150, use_column_width=False, caption="", output_format="auto")
+
     st.title("Kush Bohare")
     st.write("College Student")
     st.write("📍 Kurukshetra, Haryana")
     st.write("📧 Kushbohare@gmail.com")
     st.write("🌐 [Website](https://kushportfolio.streamlit.app/)")
     st.write("🔗 [LinkedIn](https://www.linkedin.com/in/kush-bohare-bohare-774775351/) | [GitHub](https://github.com/Programmer-kush)")
+
 
 # Main Content
 st.title("Welcome to My Portfolio")
