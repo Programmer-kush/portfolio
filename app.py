@@ -33,11 +33,16 @@ with st.container():
 # Projects
 st.header("Projects")
 
-# Function to create a project card
+# Function to create a project card with a fixed 16:9 image aspect ratio
 def create_project(title, image_path, description, link):
     with st.container():
         st.subheader(title)
-        st.image(image_path, use_container_width=True)
+        
+        # Load and resize image to 16:9 aspect ratio
+        img = Image.open(image_path)
+        img = img.resize((960, 540))  # Standard 16:9 resolution
+        st.image(img, use_column_width=True)
+        
         st.write(description)
         st.markdown(f"[🔗 View Project]({link})")
 
