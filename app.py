@@ -4,29 +4,8 @@ from PIL import Image
 # Set page config
 st.set_page_config(page_title="My Portfolio", page_icon="🎭", layout="wide")
 
-# Sidebar
 with st.sidebar:
-    # Add custom CSS for rounded image
-    st.markdown(
-        """
-        <style>
-            .sidebar-image {
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                border-radius: 50%; /* Makes image circular */
-                width: 150px; /* Adjust size as needed */
-                height: 150px; /* Ensures it's a perfect circle */
-                object-fit: cover; /* Prevents distortion */
-            }
-        </style>
-        """,
-        unsafe_allow_html=True
-    )
-
-    # Apply the class to the image
-    st.image("selfimage.jpg", width=150, use_container_width==False, caption="", output_format="auto")
-
+    st.image("selfimage.jpg", width=200)
     st.title("Kush Bohare")
     st.write("College Student")
     st.write("📍 Kurukshetra, Haryana")
@@ -35,6 +14,7 @@ with st.sidebar:
     st.write("🔗 [LinkedIn](https://www.linkedin.com/in/kush-bohare-bohare-774775351/) | [GitHub](https://github.com/Programmer-kush)")
 
 
+    
 # Main Content
 st.title("Welcome to My Portfolio")
 
