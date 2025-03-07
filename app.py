@@ -25,7 +25,7 @@ with st.sidebar:
     )
 
     # Apply the class to the image
-    st.image("selfimage.jpg", width=150, use_column_width=False, caption="", output_format="auto")
+    st.image("selfimage.jpg", width=150, use_container_width==False, caption="", output_format="auto")
 
     st.title("Kush Bohare")
     st.write("College Student")
