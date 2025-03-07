@@ -74,7 +74,7 @@ with col6:
 # Skills
 st.header("Skills")
 skills = ["Python","Data structure & Algorithm","Machine Learning", "Web Development", "IoT", "Android Development"]
-st.write(", ".join(skills))
+st.markdown("\n".join(f"- {skill}" for skill in skills))
 
 # Contact
 st.header("Contact Me")
