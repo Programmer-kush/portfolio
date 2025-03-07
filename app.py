@@ -8,10 +8,10 @@ st.set_page_config(page_title="My Portfolio", page_icon="🎭", layout="wide")
 with st.sidebar:
     st.image("selfimage.jpg", width=200)
     st.title("Kush Bohare")
-    st.write("College Student ")
+    st.write("College Student")
     st.write("📍 Kurukshetra, Haryana")
     st.write("📧 Kushbohare@gmail.com")
-    st.write("🌐 [website](https://kushportfolio.streamlit.app/)")
+    st.write("🌐 [Website](https://kushportfolio.streamlit.app/)")
     st.write("🔗 [LinkedIn](https://www.linkedin.com/in/kush-bohare-bohare-774775351/) | [GitHub](https://github.com/Programmer-kush)")
 
 # Main Content
@@ -33,69 +33,66 @@ with st.container():
 # Projects
 st.header("Projects")
 
-# Creating rows for project display
+# Function to create a project card
 def create_project(title, image_path, description, link):
-    """Helper function to create a project layout inside a container."""
     with st.container():
         st.subheader(title)
         st.image(image_path, use_container_width=True)
         st.write(description)
-        st.write(f"[🔗 View Project]({link})")
+        st.markdown(f"[🔗 View Project]({link})")
 
-# First row
-with st.container():
-    col1, col2, col3 = st.columns(3)
-    with col1:
-        create_project(
-            "Movie Recommendation System",
-            "Movie Recommendation.png",
-            "A movie recommendation system that suggests movies based on user preferences using collaborative filtering.",
-            "https://github.com/Programmer-kush/Movie-recomdation-system"
-        )
-    with col2:
-        create_project(
-            "AI Chatbot",
-            "ChatBot.png",
-            "An interactive Q&A chatbot built using Streamlit and integrated with open-source large language models (LLMs).",
-            "https://github.com/Programmer-kush/ChatBot"
-        )
-    with col3:
-        create_project(
-            "AI Resume Screening",
-            "Resume Screening.png",
-            "An AI-powered resume screening tool that evaluates resumes based on job descriptions and keywords.",
-            "https://github.com/Programmer-kush/AI-Resume_Screening"
-        )
+# Row 1
+col1, col2, col3 = st.columns(3)
+with col1:
+    create_project(
+        "Movie Recommendation System",
+        "Movie Recommendation.png",
+        "A system that suggests movies based on user preferences using collaborative filtering.",
+        "https://github.com/Programmer-kush/Movie-recomdation-system"
+    )
+with col2:
+    create_project(
+        "AI Chatbot",
+        "ChatBot.png",
+        "An interactive chatbot using open-source large language models (LLMs).",
+        "https://github.com/Programmer-kush/ChatBot"
+    )
+with col3:
+    create_project(
+        "AI Resume Screening",
+        "Resume Screening.png",
+        "An AI-powered resume screening tool that evaluates resumes based on job descriptions.",
+        "https://github.com/Programmer-kush/AI-Resume_Screening"
+    )
 
-# Second row
-with st.container():
-    col4, col5, col6 = st.columns(3)
-    with col4:
-        create_project(
-            "IoT-Based Car Parking System",
-            "IOT Project.jpg",
-            "A smart car parking system using IoT, sensors, and a Machine Learning model.",
-            "https://github.com/Programmer-kush/Automated-Car-parking-system"
-        )
-    with col5:
-        create_project(
-            "Android App - UnitConverter",
-            "UnitConverterApp.png",
-            "A simple unit converter app for Android made using Jetpack Compose.",
-            "https://github.com/Programmer-kush/UnitConverterApp"
-        )
-    with col6:
-        create_project(
-            "Fake News Detection using ML",
-            "Fake news detect.png",
-            "A machine learning model that detects fake news.",
-            "https://github.com/Programmer-kush/ML-powered-Fake-news-detector"
-        )
+# Row 2
+col4, col5, col6 = st.columns(3)
+with col4:
+    create_project(
+        "IoT-Based Car Parking System",
+        "IOT Project.jpg",
+        "A smart car parking system using IoT, sensors, and a machine learning model.",
+        "https://github.com/Programmer-kush/Automated-Car-parking-system"
+    )
+with col5:
+    create_project(
+        "Android App - UnitConverter",
+        "UnitConverterApp.png",
+        "A simple unit converter app for Android made using Jetpack Compose.",
+        "https://github.com/Programmer-kush/UnitConverterApp"
+    )
+with col6:
+    create_project(
+        "Fake News Detection using ML",
+        "Fake news detect.png",
+        "A machine learning model that detects fake news.",
+        "https://github.com/Programmer-kush/ML-powered-Fake-news-detector"
+    )
 
 # Skills
 st.header("Skills")
 with st.container():
-    skills = ["Python", "Data Structure & Algorithm", "Machine Learning", "Web Development", "IoT", "Android Development"]
+    skills = ["Python", "Data Structures & Algorithms", "Machine Learning", "Web Development", "IoT", "Android Development"]
     st.markdown("\n".join(f"- {skill}" for skill in skills))
 
 # Contact
