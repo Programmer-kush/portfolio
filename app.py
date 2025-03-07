@@ -43,7 +43,7 @@ with col2:
     st.subheader("Ai Chatbot")
     st.image("ChatBot.png", use_container_width=True)
     st.write("An interactive Q&A chatbot built using Streamlit and integrated with open-source large language models (LLMs). Designed to provide intelligent, witty, and human-like responses while maintaining conversational context through message history.")
-    st.write("[🔗 View Project](hhttps://github.com/Programmer-kush/ChatBot)")
+    st.write("[🔗 View Project](https://github.com/Programmer-kush/ChatBot)")
 
 with col3:
     st.subheader("AI Resume Screening")
