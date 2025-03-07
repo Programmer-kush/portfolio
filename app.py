@@ -11,7 +11,7 @@ with st.sidebar:
     st.write("College Student ")
     st.write("📍 Kurukshetra, Haryana")
     st.write("📧 Kushbohare@gmail.com")
-    st.write("🌐 [Your Website](https://yourwebsite.com)")
+    st.write("🌐 [website](https://kushportfolio.streamlit.app/)")
     st.write("🔗 [LinkedIn](https://www.linkedin.com/in/kush-bohare-bohare-774775351/) | [GitHub](https://github.com/Programmer-kush)")
 
 # Main Content
@@ -35,19 +35,19 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.subheader("Movie Recommendation System")
-    st.image("selfimage.jpg", use_column_width=True)
+    st.image("Movie Recommendation.png", use_container_width=True)
     st.write("A system that recommends movies based on user preferences.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush)")
 
 with col2:
     st.subheader("Ai Chatbot")
-    st.image("selfimage.jpg", use_column_width=True)
+    st.image("ChatBot.png", use_container_width=True)
     st.write("An interactive Q&A chatbot built using Streamlit and integrated with open-source large language models (LLMs). Designed to provide intelligent, witty, and human-like responses while maintaining conversational context through message history.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush)")
 
 with col3:
-    st.subheader("Portfolio Website")
-    st.image("selfimage.jpg", use_column_width=True)
+    st.subheader("AI Resume Screening")
+    st.image("Resume Screening.png", use_container_width=True)
     st.write("A personal portfolio website showcasing my projects and skills.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush)")
 
@@ -55,19 +55,19 @@ col4, col5, col6 = st.columns(3)
 
 with col4:
     st.subheader("IoT-Based Car Parking System")
-    st.image("selfimage.jpg", use_column_width=True)
+    st.image("IOT Project.jpg", use_container_width=True)
     st.write("A smart car parking system using IoT and sensors.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush)")
 
 with col5:
-    st.subheader("Android App - Birthday Wish")
-    st.image("selfimage.jpg", use_column_width=True)
+    st.subheader("Android App - UnitConverter")
+    st.image("UnitConverterApp.png", use_container_width=True)
     st.write("An Android app that sends automated birthday wishes.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush)")
 
 with col6:
-    st.subheader("RC Ornithopter")
-    st.image("selfimage.jpg", use_column_width=True)
+    st.subheader("Fake News Detection using ML")
+    st.image("Fake news detect.png", use_container_width=True)
     st.write("A remote-controlled ornithopter designed for flight testing.")
     st.write("[🔗 View Project](https://github.com/Programmer-kush)")
 
